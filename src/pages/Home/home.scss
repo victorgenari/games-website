@@ -1,0 +1,500 @@
+/* MAIN */
+
+#main {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    max-width: 1150px;
+
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+#menu-aside-and-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+
+#main-icon-and-account {
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    max-width: 250px;
+
+    cursor: pointer;
+
+    font-size: 1.2rem;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20rem;
+    border: 2px solid black;
+}
+
+#main-icon-and-account i {
+    padding: 0.5rem;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+#main-icon-and-account span:hover {
+    filter: brightness(0.8);
+}
+
+#main-icon-and-account i:hover {
+    filter: brightness(0.8);
+}
+
+
+
+
+#emphasis {
+    width: 100%;
+
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 3rem;
+    box-shadow: 5px 5px 12px black;
+}
+
+#emphasis summary {
+    font-weight: 600;
+    margin-bottom: 1rem;
+
+    background-image: linear-gradient(to bottom, black, red);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: black;
+}
+
+
+
+#menu-aside {
+    width: 28%;
+    height: 80rem;
+
+    overflow: hidden;
+    padding: 1rem 1rem 0 1rem;
+    border-radius: 0.5rem;
+    color: white;
+    box-shadow: 0px 0px 12px black;
+    background: linear-gradient(45deg, rgb(66, 33, 99), steelblue, turquoise);
+}
+
+#menu-aside:hover {
+    overflow-y: scroll;
+    overflow-y: overlay;
+}
+
+#menu-aside ul {
+    list-style: none;
+}
+
+#menu-aside li {
+    margin: 0 0 1rem 0;
+    border-bottom: 1px solid transparent;
+    width: 90%;
+}
+
+#menu-aside li:hover {
+    cursor: pointer;
+    filter: brightness(0.8);
+}
+
+#aside-search {
+    display: flex;
+    align-items: center;
+
+    width: 40px;
+
+    overflow: hidden;
+    margin-bottom: 1rem;    
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 2px solid white;
+}
+
+#aside-search:hover {
+    width: 100%;
+    transition: 0.5s;
+}
+
+#aside-search i {
+    font-size: 1.3rem;
+    margin: 0.2rem 0.5rem 0 0;
+
+    color: white;
+}
+
+#aside-search input {
+    width: 100%;
+
+    font-size: 1.3rem;
+    background: transparent;
+    color: white;
+
+    ::placeholder {
+        color: white;
+        opacity: 0.5;
+    }
+}
+
+
+
+
+
+
+#all-cards {
+    width: 72%;
+    height: 80rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+
+    overflow: hidden;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 12px black;
+    background: linear-gradient(45deg, turquoise, steelblue, rgb(66, 33, 99));
+}
+
+#all-cards:hover {
+    overflow-y: scroll;
+    overflow-y: overlay;
+}
+
+#cards-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    width: 100%;
+
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+
+#thecard {
+    width: 100%;
+    height: 35rem;
+    
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+#thecard:hover {
+    transform: rotateY(180deg);
+}
+
+#thefront {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    backface-visibility: hidden;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#thefront img {
+    width: 100%;
+    height: 70%;
+
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+#front-descriptions {
+    display: flex;
+    flex-direction: column;
+
+    height: 30%;
+
+    padding: 0 0.5rem;
+}
+
+#front-name {
+    height: 3rem;
+
+    font-size: 1.3rem;
+}
+
+#front-type {
+    margin-top: 2rem;
+}
+
+#front-value {
+    font-size: 1.7rem;
+}
+
+#theback {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    backface-visibility: hidden;
+    background: linear-gradient(45deg, gray, rgb(252, 247, 247));
+    transform: rotateY(180deg);
+
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+#back-description {
+    margin: 0 0 3rem 0;
+}
+
+#back-analytics {
+    margin: 0 0 1.5rem 0;
+}
+
+
+
+#company-info {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+
+    color: white;
+    background: linear-gradient(45deg, rgb(66, 33, 99), steelblue, turquoise);
+}
+
+#company-info h2 {
+    margin-bottom: 1rem;
+}
+
+#company-descriptions {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    gap: 1rem;
+}
+
+#company-descriptions h2 {
+    margin-bottom: 1rem;
+}
+
+#company-card-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 12px rgb(66, 33, 99);
+}
+
+#company-card-description i {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: steelblue;
+}
+
+
+// PAGE UP BUTTON
+.back-to-top {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    visibility: visible;
+    opacity: 1;
+
+    font-size: 3rem;
+    cursor: pointer;
+    padding: 0 2rem 6rem 0;
+    color: turquoise;
+}
+
+.back-to-top:hover {
+    filter: brightness(0.5);
+    transition: .3s;
+}
+
+.back-to-top.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+// WHATSAPP BUTTON
+#btn-whatsapp {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+
+    font-size: 3rem;
+    cursor: pointer;
+    padding: 0 2rem 1rem 0;
+}
+
+#btn-whatsapp:hover {
+    filter: brightness(0.5);
+    transition: .3s;
+}
+
+#btn-whatsapp a {
+    color: green;
+}
+
+
+
+
+/* Visiton - 885px */
+@media (max-width: 885px) {
+
+    #company-descriptions {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+/* Visiton - 575 */
+@media (max-width: 575px) {
+
+    #company-descriptions {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+
+
+
+/* Visiton - 1150px */
+@media (max-width: 1150px) {
+
+    #main-icon-and-account {
+        display: flex;
+    }
+
+    
+    #all-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #thecard {
+        width: 100%;
+    }
+
+}
+
+
+/* Visiton - 1080px */
+@media (max-width: 1080px) {
+
+    #menu-aside-and-cards {
+        flex-direction: column;
+    }
+
+    #menu-aside {
+        width: 100%;
+        height: 15rem;
+    }
+
+    #aside-search {
+        display: flex;
+        align-items: center;
+    
+        width: 100%;
+    
+        overflow: hidden;
+        margin-bottom: 1rem;    
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        border: 2px solid white;
+    }
+
+    #all-cards {
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+
+
+
+/* Visiton - 920px */
+@media (max-width: 920px) {
+
+    #all-cards {
+        grid-template-columns: 1fr 1fr;
+        padding: 1rem 6rem;
+    }
+
+    #thecard {
+        width: 100%;
+    }
+
+}
+
+
+
+/* Visiton - 770px */
+@media (max-width: 770px) {
+
+    #all-cards {
+        padding: 1rem 4rem;
+    }
+
+
+}
+
+
+
+/* Visiton - 650px */
+@media (max-width: 650px) {
+
+    #all-cards {
+        padding: 1rem 2rem;
+    }
+
+}
+
+
+
+/* Visiton - 500px */
+@media (max-width: 500px) {
+
+    #all-cards {
+        grid-template-columns: 1fr;
+        padding: 1rem 4rem;
+    }
+
+    #thecard {
+        width: 100%;
+    }
+
+}
+
+
+
+/* Visiton - 395px */
+@media (max-width: 395px) {
+
+    #all-cards {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+}

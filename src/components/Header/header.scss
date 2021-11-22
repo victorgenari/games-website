@@ -1,0 +1,319 @@
+/* HEADER */
+
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+}
+
+#menu-logo-and-social-media {
+    display: flex;
+
+    width: 100%;
+    max-width: 1200px;
+
+    padding: 0.8rem 0;
+}
+
+#menu-btns-background {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+
+    padding: 0.5rem 0;
+    background: linear-gradient(45deg, rgb(66, 33, 99), steelblue, turquoise);
+}
+
+
+
+
+#menu-logo {
+    display: flex;
+    align-items: center;
+
+    width: 50%;
+    
+    font-size: 2rem;
+    padding: 0 0 0 1rem;
+}
+
+#menu-logo span:hover {
+    cursor: pointer;
+    color: steelblue;
+}
+
+#menu-social-media {
+    display: flex;
+    justify-content: flex-end;
+
+    width: 50%;
+
+    font-size: 2rem;
+    padding: 0.6rem 1rem 0 0;
+}
+
+#menu-social-media i {
+    padding: 0 0.3rem;
+    cursor: pointer;
+}
+
+#menu-social-media i:hover {
+    color: steelblue;
+}
+
+
+
+
+
+
+#menu-btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    max-width: 1200px;
+
+    font-size: 1.5rem;
+    padding: 0 1rem;
+    gap: 2rem;
+    color: white;
+}
+
+#menu-btns ul {
+    display: flex;
+    justify-content: center;
+
+    gap: 2rem;
+    list-style: none;
+}
+
+#menu-btns li, i {
+    display: flex;
+    align-items: center;
+}
+
+#menu-btns i {
+    margin-right: 0.5rem;
+}
+
+#menu-btns li:hover {
+    cursor: pointer;
+    filter: brightness(0.8);
+}
+
+
+
+
+#menu-icon-and-account {
+    display: flex;
+    align-items: center;
+ 
+    cursor: pointer;
+
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20rem;
+    border: 2px solid white;
+}
+
+#menu-icon-and-account i {
+    padding: 0.5rem;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+#menu-icon-and-account span:hover {
+    filter: brightness(0.8);
+}
+
+#menu-icon-and-account i:hover {
+    filter: brightness(0.8);
+}
+
+
+
+
+
+// MODAL
+#modal-bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    z-index: 100;
+
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#modal {
+    width: 100%;
+    max-width: 600px;
+    height: 40rem;
+
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background: white;
+}
+
+#modal-icon-close {
+    display: flex;
+    justify-content: flex-end;
+
+    font-size: 3rem;
+    color: rgb(107, 25, 25);
+}
+
+#modal-icon-close i:hover {
+    cursor: pointer;
+    filter: brightness(0.8);
+}
+
+#modal h2 {
+    font-size: 2rem;
+}
+
+#modal label {
+    font-size: 1.3rem;
+}
+
+#modal input {
+    font-size: 1.5rem;
+    padding: 1rem 0.5rem;
+    margin-bottom: 1rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+
+    color: white;
+    border-bottom: 2px solid black;
+    background: linear-gradient(45deg, rgb(66, 33, 99), steelblue, turquoise);
+}
+
+#modal input::placeholder {
+    color: white;
+    opacity: 0.5;
+}
+
+#all-form-without-icon-close {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 92%;
+}
+
+#modal-form {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    max-width: 420px;
+}
+
+#modal-btns {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+}
+
+#modal-btns button {
+    text-align: center;
+
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+    margin: 1rem 0.2rem 0 0.2rem;
+    border-radius: 0.5rem;
+
+    width: 100%;
+    max-width: 9rem;
+}
+
+#modal-btns button:hover {
+    filter: brightness(0.8);
+}
+
+#modal-btn-enter {
+    color: white;
+    background: linear-gradient(45deg, #213447, #2b7ccc);
+}
+
+#modal-btn-cancel {
+   text-align: center;color: white;
+    background: linear-gradient(45deg, #7b4397, #dc2430);
+}
+
+#modal-icons {
+    display: flex;
+    
+    font-size: 2rem;    
+    margin-top: 2rem;
+    gap: 2rem;
+}
+
+#modal-icons i:hover {
+    color: steelblue;
+    cursor: pointer;
+}
+
+
+
+
+/* Vision - 1150px */
+@media (max-width: 1150px) {
+
+    #menu-icon-and-account {
+        display: none;
+    }
+
+    #menu-btns {
+        align-items: flex-start;
+        justify-content: center;
+    }
+    
+
+}
+
+/* Vision - 908px */
+@media (max-width: 908px) {
+
+    #menu-btns {
+        justify-content: flex-start;
+
+        width: 100%;
+        height: 5rem;
+
+        padding: 1rem;
+
+        overflow: hidden;
+    }
+
+    #menu-btns:hover {
+        width: 100%;
+        height: 26rem;
+
+        overflow-y: scroll;
+        overflow-y: overlay;
+
+        transition: 0.5s;
+    }
+
+    #menu-btns ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
